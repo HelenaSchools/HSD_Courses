@@ -1,7 +1,7 @@
 
 
 <script>
-    $j(docuemnt).ready(function(){
+    $j(document).ready(function(){
         // Remove unused fields
         $j('textarea[name="[courses]sched_fullcatalogdescription"]').closest('tr').remove();
         $j('input[name="[courses]alt_course_number"]').closest('tr').remove();
