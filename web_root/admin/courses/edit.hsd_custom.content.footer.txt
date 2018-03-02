@@ -48,7 +48,7 @@
         $j('textarea[name=UF-002007102').closest('tr').remove();
         // TODO: Insert custom rows
 
-        var contentToAdd = $j('tbody#ContentToAdd').innerHtml();
+        var contentToAdd = $j('tbody#ContentToAdd').html();
         $j('input[name=UF002025102').closest('tr').before(contentToAdd);
     })
 </script>

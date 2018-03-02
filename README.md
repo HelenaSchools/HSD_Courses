@@ -80,6 +80,10 @@
     Updated names in jquery tags to be the rendered names. PowerSchool didn't parse the names as expected. Changed some of the statements due to names too complex. 
 
 ## Version 0.1
-### Version 0.0.01
+### Version 0.1.00
 #### Update edit.hsd_custom.content.footer.txt
     Added fields for 
+
+### Version 0.1.01
+#### Bug fix on edit.hsd_custom.content.footer.txt
+    Updated jquery statement from InnerHtml() to html(). 
