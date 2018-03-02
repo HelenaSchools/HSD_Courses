@@ -1,8 +1,8 @@
 # HSD - Courses Customization
 
 ## Version 0.0.01  
-### Added edit.hsd_custom.content.footer.txt;
-Added basic custom file. Contains the javascript to remove the following fields:
+### Added edit.hsd_custom.content.footer.txt
+    Added basic custom file. Contains the javascript to remove the following fields:
 <table>
     <thead>
         <tr>
@@ -69,3 +69,7 @@ Added basic custom file. Contains the javascript to remove the following fields:
         </tr>
     </tbody>
 </table>
+
+## Version 0.0.02
+### Bug fix on edit.hsd_custom.content.footer.txt
+    Mis-spelled documnet in script so it failed. 
