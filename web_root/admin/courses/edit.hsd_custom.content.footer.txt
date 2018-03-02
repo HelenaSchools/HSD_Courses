@@ -23,6 +23,7 @@
             <td class="bold">CTE Courses</td>
             <td>
                 <select name="[courses]cte_course">
+                    <option value=""></option>
                     <option value="1">Agriculture</option>
                     <option value="7">Business</option>
                     <option value="8">Marketing</option>
@@ -49,6 +50,7 @@
         // TODO: Insert custom rows
 
         var contentToAdd = $j('tbody#ContentToAdd').html();
-        $j('input[name=UF002025102').closest('tr').before(contentToAdd);
+        $j('tbody#ContentToAdd').closest('table').remove();
+        $j('input[name=UF-002025102').closest('tr').before(contentToAdd);
     })
 </script>

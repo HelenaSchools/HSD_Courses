@@ -87,3 +87,8 @@
 ### Version 0.1.01
 #### Bug fix on edit.hsd_custom.content.footer.txt
     Updated jquery statement from InnerHtml() to html(). 
+
+### Version 0.1.02
+#### Update edit.hsd_custom.content.footer.txt
+    Added statment to remove content to add after move.
+    Added blank select option to CTE course field.
