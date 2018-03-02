@@ -1,7 +1,8 @@
 # HSD - Courses Customization
 
-## Version 0.0.01  
-### Added edit.hsd_custom.content.footer.txt
+## Version 0.0
+### Version 0.0.01  
+#### Added edit.hsd_custom.content.footer.txt
     Added basic custom file. Contains the javascript to remove the following fields:
 <table>
     <thead>
@@ -70,10 +71,15 @@
     </tbody>
 </table>
 
-## Version 0.0.02
-### Bug fix on edit.hsd_custom.content.footer.txt
+### Version 0.0.02
+#### Bug fix on edit.hsd_custom.content.footer.txt
     Mis-spelled documnet in script so it failed. 
 
-## Verions 0.0.03
-### Bug fix on edit.hsd_custom.content.footer.txt
+### Verions 0.0.03
+#### Bug fix on edit.hsd_custom.content.footer.txt
     Updated names in jquery tags to be the rendered names. PowerSchool didn't parse the names as expected. Changed some of the statements due to names too complex. 
+
+## Version 0.1
+### Version 0.0.01
+#### Update edit.hsd_custom.content.footer.txt
+    Added fields for 
