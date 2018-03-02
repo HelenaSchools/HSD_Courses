@@ -3,13 +3,13 @@
 <script>
     $j(document).ready(function(){
         // Remove unused fields
-        $j('textarea[name="[courses]sched_fullcatalogdescription"]').closest('tr').remove();
-        $j('input[name="[courses]alt_course_number"]').closest('tr').remove();
-        $j('input[name="[courses]code"]').closest('tr').remove();
-        $j('input[name="[courses]maxcredit$formatnumeric=credithour"]').closest('tr').remove();
-        $j('input[name="[courses]ProgramId"]').closest('tr').remove();
+        $j('textarea[name=UF-002030102]').closest('tr').next().remove();
+        $j('textarea[name=UF-002030102]').closest('tr').remove();
+        $j('input[name=UF-002006102]').closest('tr').prev().remove();
+        $j('input[name=UF-002006102]').closest('tr').remove();
+        $j('select[name=UF-002079102]').closest('tr').remove();
         $j('a#departmentassociatebtn').closest('tr').remove();
-        $j('input[name=[courses]prerequisites').closest('tr').remove();
+        $j('textarea[name=UF-002007102').closest('tr').remove();
         // TODO: Insert custom rows
     })
 </script>

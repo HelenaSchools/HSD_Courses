@@ -73,3 +73,7 @@
 ## Version 0.0.02
 ### Bug fix on edit.hsd_custom.content.footer.txt
     Mis-spelled documnet in script so it failed. 
+
+## Verions 0.0.03
+### Bug fix on edit.hsd_custom.content.footer.txt
+    Updated names in jquery tags to be the rendered names. PowerSchool didn't parse the names as expected. Changed some of the statements due to names too complex. 
