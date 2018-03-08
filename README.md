@@ -120,3 +120,7 @@
 ### Version 0.2.00 - Future Release
 #### Adding the NCES and course list functionality
     Started new version to add the NCES codes and functionality for the codes. 
+
+### Version 0.2.01 - Future Release
+#### Adding district settings to admin/district/
+    Added page home.AddDeleteStateCourses.content.footer.txt

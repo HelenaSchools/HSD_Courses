@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<!-- non framed -->
+<head>
+<title>Delete State Courses</title>
+~[wc:commonscripts]
+<link href="/images/css/screen.css" rel="stylesheet" media="screen">
+<link href="/images/css/print.css" rel="stylesheet" media="print">
+<script language="JavaScript" src="/scripts/tlistCustomization.js"></script>
+<script>
+
+$j('#checkAll').live('click',function () {
+	  $j("td button").each(function() {
+	    if ($j(this).hasClass("undoDelRow")) {
+	      if ($j(this).hasClass("hide"))
+		  {
+		    $j(this).removeClass("hide");
+		    $j(this).closest('tr').find('input[name^="CF-"]').prop('disabled', 'disabled');
+		    $j(this).closest('tr').find('input:checkbox[name^="DC-"]').prop('checked','1');
+		    $j(this).closest('tr').addClass("rowToDelete");
+		  } else {
+		    $j(this).addClass("hide");
+			$j(this).closest('tr').find('input[name^="CF-"]').prop('disabled','');
+		    $j(this).closest('tr').find('input:checkbox[name^="DC-"]').prop('checked',false);
+		    $j(this).closest('tr').removeClass("rowToDelete");
+		  };
+		};
+	    if ($j(this).hasClass("deleteRow")) {
+	      if ($j(this).hasClass("hide"))
+		  {
+		    $j(this).removeClass("hide");
+		  } else {
+		    $j(this).addClass("hide");
+		  };
+		};
+	});
+});
+
+</script>
+
+</head>
+
+<body>
+
+<form action="" method="POST">
+~[wc:admin_header_css]<!-- breadcrumb start --><a href="/admin/home.html" target="_top">~[text:psx.html.admin_tech.executecommand.start_page]</a> &gt;Delete State Courses<!-- breadcrumb end -->~[wc:admin_navigation_css]
+
+<h1>Delete State Courses</h1><!-- start of content and bounding box -->
+<div class="box-round">
+<!-- note - in 8.2.2 the tlistText2StaticText('coursecode') is broken so it was removed here.
+  The readonly capability is done in field level security where we set read only
+  on the two fields rendered below.  bob 7-1-15 -->
+~[if.~(curschoolid)=0]
+<button type="button" id="checkAll">Delete All</button>
+NOTE: This is to remove the existing records for state courses. Click the Delete All and then the Submit button at the bottom of the page. Once the records are deleted, go to the System/Page and Data Management page and re-import the correct file from the OPI web site.
+~[tlist_standalone:U_IndependentTable_Extension.U_StateCourses;displaycols:coursecode,NCEScoursename;fieldNames:Course Code,NCES Course Name;type:html]
+<br>
+
+<div class="button-row"><INPUT TYPE="hidden" NAME="ac" value="prim">~[submitbutton]</div>
+</div>
+<br>
+<!-- end of content of bounding box -->
+[else]This screen only works from the District Office.[/if]
+~[wc:admin_footer_css]
+</form>
+
+</body>
+</html><!-- non framed -->
