@@ -59,7 +59,7 @@
         $j('tbody#ContentToAdd').closest('table').remove();
         $j('input[name^=UF-002025').closest('tr').before(contentToAdd);
 
-        $j('#cteCourseInd').change(function(){
+        $j('#cteCourseInd').on("change",function(){
             if($j('#cteCourseInd').val()==='Y'){
                 $j('#cteAreaOfConcentration').show();
             }else{

@@ -105,3 +105,7 @@
 #### Update edit.hsd_cusom.content.footer.txt
     Updated script to remove/add data to use the name of element "Like" instead of "equal"
     i.e.    [name=002030102] changed to [name^=002030]
+
+### Version 0.1.05
+#### Update edit.hsd_cusom.content.footer.txt
+    Change script to work on update of CTE Course field
