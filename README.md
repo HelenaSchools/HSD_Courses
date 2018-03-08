@@ -100,3 +100,8 @@
         New name CTE Area of Conenctration
     Added ids to all custom rows
     Added script to hide/un-hide CTE Area of Concentration based upon value in CTE Course
+
+### Version 0.1.04
+#### Update edit.hsd_cusom.content.footer.txt
+    Updated script to remove/add data to use the name of element "Like" instead of "equal"
+    i.e.    [name=002030102] changed to [name^=002030]
