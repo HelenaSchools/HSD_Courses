@@ -92,3 +92,11 @@
 #### Update edit.hsd_custom.content.footer.txt
     Added statment to remove content to add after move.
     Added blank select option to CTE course field.
+
+### Version 0.1.03
+#### Update edit.hsd_cusom.content.footer.txt
+    Updated CTE Area of Concentration Field to use the accurate name
+        Previous name CTE Courses
+        New name CTE Area of Conenctration
+    Added ids to all custom rows
+    Added script to hide/un-hide CTE Area of Concentration based upon value in CTE Course

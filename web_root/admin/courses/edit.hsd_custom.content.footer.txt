@@ -1,6 +1,6 @@
 <table>
     <tbody id='ContentToAdd'>
-        <tr>
+        <tr id="courseCategory">
             <td class="bold">Course Category</td>
             <td>
                 <select name="[courses]course_category">
@@ -10,7 +10,7 @@
                 </select>
             </td>
         </tr>
-        <tr>
+        <tr id="cteCourseInd">
             <td class="bold">CTE Course</td>
             <td>
                 <select name="[courses]cte_course">
@@ -19,7 +19,7 @@
                 </select>
             </td>
         </tr>
-        <tr>
+        <tr id="cteAreaOfConcentration">
             <td class="bold">CTE Courses</td>
             <td>
                 <select name="[courses]cte_course">
@@ -48,9 +48,23 @@
         $j('a#departmentassociatebtn').closest('tr').remove();
         $j('textarea[name=UF-002007102').closest('tr').remove();
         // TODO: Insert custom rows
+        
+        if($j('#cteCourseInd').val()==='Y'){
+                $j('#cteAreaOfConcentration').show();
+            }else{
+                $j('#cteAreaOfConcentration').hide();
+            }
 
         var contentToAdd = $j('tbody#ContentToAdd').html();
         $j('tbody#ContentToAdd').closest('table').remove();
         $j('input[name=UF-002025102').closest('tr').before(contentToAdd);
+
+        $j('#cteCourseInd').change(function(){
+            if($j('#cteCourseInd').val()==='Y'){
+                $j('#cteAreaOfConcentration').show();
+            }else{
+                $j('#cteAreaOfConcentration').hide();
+            }
+        })
     })
 </script>
