@@ -126,6 +126,11 @@
     Added page home.AddDeleteStateCourses.content.footer.txt
 
 ### Version 0.2.02 - Future Release
-#### update home.AddDeleteStateCourses.content.footer.txt
+#### Update home.AddDeleteStateCourses.content.footer.txt
     Changed where the state courses delete page link exists, added to courses group inside the district home page
+#### Update deleteStateCourses.html
     Chanaged the custom page to have the proper breadcrumbs back to District Setup. 
+
+### Version 0.2.03 - Future Release
+#### Update deleteStateCourses.html
+    Changed breadcrum string due to typo
