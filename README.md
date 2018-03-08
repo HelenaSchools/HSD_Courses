@@ -124,3 +124,8 @@
 ### Version 0.2.01 - Future Release
 #### Adding district settings to admin/district/
     Added page home.AddDeleteStateCourses.content.footer.txt
+
+### Version 0.2.02 - Future Release
+#### update home.AddDeleteStateCourses.content.footer.txt
+    Changed where the state courses delete page link exists, added to courses group inside the district home page
+    Chanaged the custom page to have the proper breadcrumbs back to District Setup. 

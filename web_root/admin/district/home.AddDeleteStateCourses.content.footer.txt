@@ -1,13 +1,6 @@
 <table>
     <tbody id='hsdContentToAdd'>
-            <tr>
-                <td colspan="2">&nbsp;</td>
-            </tr>
-            <tr class="headerRow">
-                <td class="bold">Montana Functions</td>
-                <td class="bold">~[text:psx.html.admin_district.home.description2]</td>
-            </tr>
-            <tr>
+            <tr id='deleteNCESCodes'>
                 <td><a href="/admin/district/DeleteStateCourses.html">Delete State OPI Courses</a></td>
                 <td>Remove existing OPI course information. Do this when you need to update (reimport) the course list file from OPI.</td>
             </tr>
@@ -17,6 +10,6 @@
 <script>
     $j(document).ready(function(){
         var hsdContentToAdd=$j('#hsdContentToAdd').html();
-        $j("tr:last").after(hsdContentToAdd);
+        $j('#table_id_courses tr:last-child').after(hsdContentToAdd);
     })
 </script>
