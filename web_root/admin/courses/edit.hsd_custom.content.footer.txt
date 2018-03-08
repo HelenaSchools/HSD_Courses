@@ -49,22 +49,21 @@
         $j('textarea[name^=UF-002007').closest('tr').remove();
         // TODO: Insert custom rows
 
+        var showHideCTE= function(){
         if($j('#cteCourseInd td:last-child select').val()==='Y'){
                 $j('#cteAreaOfConcentration').show();
             }else{
                 $j('#cteAreaOfConcentration').hide();
             }
+        }
 
+        showHideCTE();
         var contentToAdd = $j('tbody#ContentToAdd').html();
         $j('tbody#ContentToAdd').closest('table').remove();
         $j('input[name^=UF-002025').closest('tr').before(contentToAdd);
 
         $j('#cteCourseInd td:last-child select').on("change",function(){
-            if($j('#cteCourseInd').val()==='Y'){
-                $j('#cteAreaOfConcentration').show();
-            }else{
-                $j('#cteAreaOfConcentration').hide();
-            }
+            showHideCTE();
         })
     })
 </script>
