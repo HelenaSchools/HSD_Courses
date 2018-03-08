@@ -50,11 +50,12 @@
         // TODO: Insert custom rows
 
         var showHideCTE= function(){
-        if($j('#cteCourseInd td:last-child select').val()==='Y'){
-                $j('#cteAreaOfConcentration').show();
-            }else{
-                $j('#cteAreaOfConcentration').hide();
-            }
+            if($j('#cteCourseInd td:last-child select').val()==='Y'){
+                    $j('#cteAreaOfConcentration').show();
+                }else{
+                    $j('#cteAreaOfConcentration').hide();
+                    $j('#cteAreaOfConcentration td:last-child select').val('');
+                }
         }
 
         showHideCTE();

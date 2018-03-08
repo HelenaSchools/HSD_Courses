@@ -94,7 +94,7 @@
     Added blank select option to CTE course field.
 
 ### Version 0.1.03
-#### Update edit.hsd_cusom.content.footer.txt
+#### Update edit.hsd_custom.content.footer.txt
     Updated CTE Area of Concentration Field to use the accurate name
         Previous name CTE Courses
         New name CTE Area of Conenctration
@@ -102,12 +102,16 @@
     Added script to hide/un-hide CTE Area of Concentration based upon value in CTE Course
 
 ### Version 0.1.04
-#### Update edit.hsd_cusom.content.footer.txt
+#### Update edit.hsd_custom.content.footer.txt
     Updated script to remove/add data to use the name of element "Like" instead of "equal"
     i.e.    [name=002030102] changed to [name^=002030]
 
 ### Version 0.1.05
 ### Version 0.1.06
 ### Version 0.1.07
-#### Update edit.hsd_cusom.content.footer.txt
+#### Update edit.hsd_custom.content.footer.txt
     Change script to work on update of CTE Course field
+
+### Version 0.1.08
+#### Update edit.hsd_custom.footer.txt
+    Add field clear to CTE Area of Concentration if the CTE Course Indicator field is set to blank (no)
