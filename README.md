@@ -134,3 +134,7 @@
 ### Version 0.2.03 - Future Release
 #### Update deleteStateCourses.html
     Changed breadcrum string due to typo
+
+### Version 1.0.01
+#### Put Department back on the Courses page
+    Returned Departments so it can be associated. 

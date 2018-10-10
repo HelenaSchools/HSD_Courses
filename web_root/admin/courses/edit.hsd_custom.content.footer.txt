@@ -45,7 +45,7 @@
         $j('input[name^=UF-002006]').closest('tr').prev().remove();
         $j('input[name^=UF-002006]').closest('tr').remove();
         $j('select[name^=UF-002079]').closest('tr').remove();
-        $j('a#departmentassociatebtn').closest('tr').remove();
+        //$j('a#departmentassociatebtn').closest('tr').remove();
         $j('textarea[name^=UF-002007').closest('tr').remove();
         // TODO: Insert custom rows
 
