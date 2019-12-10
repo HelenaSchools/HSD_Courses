@@ -1,17 +1,17 @@
 <table>
     <tbody id='ContentToAdd'>
         <tr id="courseCategory">
-            <td class="bold">Course Category</td>
+            <td class="bold">~[text:psx.htmlc.courses.hsd_courses.Category]</td>
             <td>
                 <select name="[courses]course_category">
                     <option value=""></option>
-                    <option value="AD">Advanced (Not AP)</option>
-                    <option value="AP">AP</option>
+                    <option value="AD">~[text:psx.htmlc.courses.hsd_courses.Advanced]</option>
+                    <option value="AP">~[text:psx.htmlc.courses.hsd_courses.AP]</option>
                 </select>
             </td>
         </tr>
         <tr id="cteCourseInd">
-            <td class="bold">CTE Course</td>
+            <td class="bold">~[text:psx.htmlc.courses.hsd_courses.CTECourse]</td>
             <td>
                 <select name="[courses]cte_course">
                     <option value=""></option>
@@ -20,17 +20,17 @@
             </td>
         </tr>
         <tr id="cteAreaOfConcentration">
-            <td class="bold">CTE Courses</td>
+            <td class="bold">~[text:psx.htmlc.courses.hsd_courses.CTECourses]</td>
             <td>
                 <select name="[courses]cte_course">
                     <option value=""></option>
-                    <option value="1">Agriculture</option>
-                    <option value="7">Business</option>
-                    <option value="8">Marketing</option>
-                    <option value="17">Health Sciences</option>
-                    <option value="20">Family/Consumer Sci</option>
-                    <option value="21">Tech Educ/Ind Art</option>
-                    <option value="40">Trade/Industrial</option>
+                    <option value="1">~[text:psx.htmlc.courses.hsd_courses.Agriculture]</option>
+                    <option value="7">~[text:psx.htmlc.courses.hsd_courses.Business]</option>
+                    <option value="8">~[text:psx.htmlc.courses.hsd_courses.Marketing]</option>
+                    <option value="17">~[text:psx.htmlc.courses.hsd_courses.HealthSciences]</option>
+                    <option value="20">~[text:psx.htmlc.courses.hsd_courses.FamilyConsumerSci]</option>
+                    <option value="21">~[text:psx.htmlc.courses.hsd_courses.TechEduc]</option>
+                    <option value="40">~[text:psx.htmlc.courses.hsd_courses.Trade]</option>
                 </select>
             </td>
         </tr>

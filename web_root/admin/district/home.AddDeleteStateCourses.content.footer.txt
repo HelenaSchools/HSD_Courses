@@ -1,8 +1,8 @@
 <table>
     <tbody id='hsdContentToAdd'>
             <tr id='deleteNCESCodes'>
-                <td><a href="/admin/district/DeleteStateCourses.html">Delete State OPI Courses</a></td>
-                <td>Remove existing OPI course information. Do this when you need to update (reimport) the course list file from OPI.</td>
+                <td><a href="/admin/district/DeleteStateCourses.html">~[text:psx.htmlc.courses.hsd_courses.DeleteNCES]</a></td>
+                <td>~[text:psx.htmlc.courses.hsd_courses.FunctionDescription]</td>
             </tr>
     </tbody>
 </table>
