@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>~[text:psx.htmlc.courses.hsd_courses.NCESTitle]</title>
+        ~[wc:commonscripts]
+        <link rel="stylesheet" href="/images/css/screen.css" media="screen">
+        <link rel="stylesheet" href="/images/css/print.css" media="print">
+    </head>
+    <body>
+        <form action="" method="POST">
+            ~[wc:admin_header_css]
+                <!-- Breadcrumb start-->
+                <a href="/admin/home.html" target="_top">~[text:psx.html.admin_district.home.start_page]</a>&gt;
+                <a href="/district/home.html" target="_top">~[text:psx.html.admin_district.home.district_setup1]</a>&gt;
+                ~[text:psx.htmlc.courses.hsd_courses.NCESTitle]
+                <!-- End Breadcrumbs -->
+                <h1>~[text:psx.htmlc.courses.hsd_courses.NCESTitle]</h1>
+                <div class="box-round">
+                    <form id="NCESCoursesForm" name="NCESCoursesForm" >
+                        <div class="button-rom">
+                                <input type="button" data-ng-click="addNCESCourseDialog()" id="addNewNCESCourseButton" name="addNewNCESCourseButton" value="~[text:psx.htmlc.courses.hsd_courses.add]">
+                        </div>
+                        <p class="feedback-info" data-ng-if="!ncescourses.length">
+                            ~[text:psx.htmlc.courses.hsd_courses.noNCESCourses]
+                        </p>
+                        <table id="ncesCoursesTable" class="grid" data-ng-if="ncescourses.length">
+                            <colgroup>
+                                <col style="width:auto">
+                                <col style="width:auto">
+                                <col style="width: 1%">
+                            </colgroup>
+                            <tr>
+                                <th>
+                                    ~[text:psx.htmlc.courses.hsd_courses.NCESCourseName]
+                                </th>
+                                <th>
+                                    ~[text:psx.htmlc.courses.hsd_courses.NCESCourseNumber]
+                                </th>
+                            </tr>
+                            <tr data-ng-repeat="ncesCourse in ncesCourses" class="center">
+                                <td class="nowrap left">
+                                    {{ncesCourse.name}}
+                                </td>
+                                <td class="nowrap left">
+                                    {{ncesCourse.number}}
+                                </td>
+                                <td class="td-button-holder nowrap">
+                                    <div>
+                                        <button class="editButton" 
+                                            type="button" 
+                                            aria-label="~[text:psx.htmlc.courses.hsd_courses.expand]"
+                                            id="expandNCESCourseButton{{$index}}"
+                                            data-ng-click="editDialogHandler(course, editCourseDialog)"
+                                            title="~[text:psx.htmlc.courses.hsd_courses.edit]">
+                                            <em class="ui-icon-white ui-icon-plusthick ui-icon"></em>
+                                        </button>
+                                        <button class="editButton" 
+                                            type="button" 
+                                            aria-label="~[text:psx.htmlc.courses.hsd_courses.edit]"
+                                            id="editNCESCourseButton{{$index}}"
+                                            data-ng-click="editDialogHandler(course, editCourseDialog)"
+                                            title="~[text:psx.htmlc.courses.hsd_courses.edit]">
+                                            <em class="ui-icon-white ui-icon-pencil ui-icon"></em>
+                                        </button>
+                                        <button class="editButton" 
+                                            type="button" 
+                                            aria-label="~[text:psx.htmlc.courses.hsd_courses.delete]"
+                                            id="deleteNCESCourseButton{{$index}}"
+                                            data-ng-click="openCourseDeletePanel($index,course, editCourseDialog)"
+                                            title="~[text:psx.htmlc.courses.hsd_courses.delete]">
+                                            <em class="ui-icon-white ui-icon-minusthick ui-icon"></em>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+        </form>
+    </body>
+</html>
